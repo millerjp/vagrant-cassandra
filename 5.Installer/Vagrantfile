@@ -13,7 +13,7 @@
 # Adjustable settings
 INSTALLER_FILENAME = "DataStaxEnterprise-4.8.1.2015102316-linux-x64-installer.run"
 CFG_MEMSIZE = "3000"    # max memory for each VM
-CFG_TZ = "US/Pacific"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
+CFG_TZ = "UTC"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
 NETWORK = '10.10.11.'   # base IP for DSE nodes
 FIRST_IP = 10
 

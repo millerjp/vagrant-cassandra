@@ -15,12 +15,13 @@
 
 # Adjustable settings
 CFG_MEMSIZE = "3000"    # max memory for each VM
-CFG_TZ = "US/Pacific"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
+CFG_TZ = "UTC"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
 NETWORK = '10.10.10.'   # base IP for DSE nodes
 FIRST_IP = 10
 
 # number of nodes to create
-DSE_NODES = 3
+#DSE_NODES = 3
+DSE_NODES = 1
 
 # if doing a vargrant up or reload, require to have the username password
 if ARGV[0] == 'up' or ARGV[0] == 'reload'

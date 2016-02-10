@@ -12,7 +12,7 @@
 
 # Adjustable settings
 CFG_MEMSIZE = "1500"    # max memory for each VM
-CFG_TZ = "US/Pacific"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
+CFG_TZ = "UTC"   # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
 SERVER_COUNT = 7
 NETWORK = '10.211.55.'
 FIRST_IP = 110
