@@ -85,7 +85,14 @@ wget -q -O - http://debian.datastax.com/debian/repo_key | sudo apt-key add -
 apt-get update
 
 # install DSE, Java, and a few base packages
-apt-get install vim curl zip unzip git python-pip openjdk-7-jdk dse-full -y
+add-apt-repository ppa:webupd8team/java
+apt-get update
+# Java install - adjust if needed
+echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+apt-get install oracle-java8-installer -y -qq
+apt-get install oracle-java8-set-default -y -qq
+
+apt-get install vim curl zip unzip git python-pip dstat sysstat python-software-properties dse-full -y
 
 # configure DSE
 echo "Configuring DataStax Enterprise"
